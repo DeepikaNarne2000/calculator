@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script> 
+        
+         function dis(val) 
+         { 
+             document.getElementById("result").value+=val 
+         } 
+           
+        
+         function solve() 
+         { 
+             let x = document.getElementById("result").value 
+             let y = eval(x) 
+             document.getElementById("result").value = y 
+         } 
+           
+      
+         function clr() 
+         { 
+             document.getElementById("result").value = "" 
+         } 
+      </script>
+    </head>
+    <body>
+        <div class="calculator">
+  
+          <form name="calculator">
+            <table>
+            <tr>
+               <td colspan="4">
+                    <input type="text" id="result" class="answer" value="0"/>
+            </td></tr>
+            <br></div>
+<div class="cal-keys">
+            <tr>
+               <td COLSPAN="2">
+                 <input type="button" value=" AC " class="all-clear" onclick="calculator.answer.value = ''" />
+               </td>
+               <td>
+                 <input type="button" value=" % " class="per" onclick="calculator.answer.value = ''" />
+               </td>
+               <td>
+                 <input type="button" value=" / " class="operator" onclick="dis('/')" />
+               </td>
+            </tr>
+            <tr>
+               <td >
+                 <input type="button" value=" 7 " class="number" onclick="dis('7')" />
+            </td>
+               <td>
+                 <input type="button" value=" 8 " class="number" onclick="dis('8')" />
+            </td>
+               <td>
+                 <input type="button" value=" 9 " class="number" onclick="dis('9')" />
+            </td>
+             <td>
+                 <input type="button" value=" x " class="operator" onclick="dis('')" />
+            </td>
+            </tr>
+     <br>
+            <tr>
+               <td >
+                  <input type="button" value=" 4 " class="number" onclick="dis('4')" />
+               </td>
+               <td>
+                  <input type="button" value=" 5 " class="number" onclick="dis('5')" />
+               </td>
+               <td>
+                  <input type="button" value=" 6 " class="number" onclick="dis('6')" />
+               </td>
+               <td>
+                  <input type="button" value=" - " class="operator" onclick="dis('')'" />
+               </td>
+            </br>
+            <tr>
+               <td >
+                  <input type="button" value=" 1 " class="number" onclick="dis('1')" />
+               </td>
+               <td>
+                  <input type="button" value=" 2 " class="number" onclick="dis('2')" />
+               </td>
+               <td>
+                  <input type="button" value=" 3 " class="number" onclick="dis('3')" />
+               </td>
+               <td>
+                  <input type="button" value=" + " class="operator" onclick="dis('')" />
+               </td>
+            </br>
+            <tr>
+               <td colspan="2">
+                  <input type="button" value=" 0 " class="zero" onclick="dis('0')" />
+               </td>
+               <td>
+                  <input type="button" value=" . " class="decimal" onclick="dis('0')" />
+               </td>
+               <td>
+                  <input type="button" value=" = " class="equals" onclick="solve()" />
+               </td>
+           </table>
+          </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+.calculator{
+  text_align:center;
+  width: 1000px;
+  margin: 0px auto;
+  padding: 100px;
+  spacing:0px;
+}
+.answer{
+  width: 175px;
+  height:30px;
+  background-color:black;
+  color: white;
+  font-size:20px;
+  text-align:right;
+  padding: 0 20px;
+  border:none;
+  box-sizing:border-box;
+}
+.cal-keys{
+width:100%;
+}
+button{
+  width: 100%;
+  font-size: 32px;
+  height:88px;
+  font-weight: 900;
+  border: 1px solid black;
+  outline: none;
+}
+.all-clear,.zero{
+  background-color:grey;
+  width:85px;
+}
+.number,.per,.decimal{
+  background-color:grey;
+  width:40px;
+}
+.operator,.equals{
+  width:40px;
+  background-color:orange;
+}
+button:hover{
+   background: lightGray;
+}
+.operator:hover,.equals:hover{
+   background-color:lightorange;
+}
